@@ -1,105 +1,148 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Giới thiệu — [Tên của bạn]</title>
-  <meta name="description" content="Trang giới thiệu cá nhân — thông tin, kỹ năng và liên hệ">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayrton Senna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --bg: linear-gradient(180deg, #0b1220 0%, #0f3a5a 100%);
-      --card: #0b1220;
-      --muted: #9aa4b2;
-      --accent: #6ee7b7;
-      --accent-2: #7dd3fc;
-      --radius: 14px;
-      font-family: 'Inter', system-ui;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      background: var(--bg);
-      color:#e6eef6;
-      display:flex;
-      justify-content:center;
-      padding:32px 20px;
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #edf1f4;
+      color: #1f1f1f;
+      line-height: 1.6;
     }
 
-    .wrap{width:100%;max-width:980px}
-    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
-
-    .brand{display:flex;align-items:center;gap:12px}
-    .logo{
-      width:56px;height:56px;border-radius:12px;
-      background:linear-gradient(135deg,var(--accent),var(--accent-2));
-      display:flex;align-items:center;justify-content:center;
-      font-weight:800;color:#042024;box-shadow:0 6px 18px rgba(2,6,23,0.6)
+    /* Hero Section */
+    .hero {
+      height: 200px;
+      background: linear-gradient(120deg, #e9f7f6, #b0d0ff, #e9f7f6);
+      background-size: 300% 300%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+      transition: background 2s ease;
     }
-    .brand h1{font-size:18px;margin:0}
-    .brand p{margin:0;font-size:13px;color:var(--muted)}
 
-    .btn{background:rgba(255,255,255,0.05);border:none;padding:8px 12px;border-radius:10px;color:#fff;cursor:pointer;font-weight:600}
+    .hero:hover {
+      background: linear-gradient(120deg, #4da6ff, #f7eaaa, #4da6ff);
+      background-size: 300% 300%;
+      animation: gradientShift 6s ease-in-out infinite alternate;
+    }
 
-    main{display:grid;grid-template-columns:1fr 360px;gap:24px}
-    @media (max-width:920px){main{grid-template-columns:1fr}}
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
 
-    .card{background:rgba(255,255,255,0.02);border-radius:var(--radius);padding:22px}
-    .avatar{width:120px;height:120px;border-radius:18px;background:rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:28px}
+    .hero h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3rem;
+      color: #1f3b5d;
+      letter-spacing: 3px;
+      text-shadow: 0 0 8px rgba(31, 59, 93, 0.15);
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+      transition: background 0.8s ease, color 0.8s ease;
+    }
 
-    aside{position:sticky;top:22px;height:fit-content}
-    .profile-card{display:flex;flex-direction:column;gap:12px;align-items:center;text-align:center}
+    .hero h1:hover {
+      background: linear-gradient(90deg, #007f00, #f7d000);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 10px rgba(247, 208, 0, 0.4);
+    }
 
-    footer{text-align:center;color:var(--muted);font-size:13px;margin-top:20px}
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(15px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Main Content */
+    .content {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 25px 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #1f3b5d;
+    }
+
+    .card p, .card li {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <div class="logo">TD</div>
-        <div>
-          <h1>[Tên của bạn]</h1>
-          <p>Web giới thiệu cá nhân</p>
-        </div>
-      </div>
-      <button class="btn" id="themeToggle">Chế độ</button>
-    </header>
 
-    <main>
-      <div>
-        <section class="card">
-          <div style="display:flex;gap:18px;align-items:center">
-            <div class="avatar">TD</div>
-            <div class="intro">
-              <h2>Xin chào — tôi là [Tên của bạn]</h2>
-            </div>
-          </div>
-        </section>
-      </div>
+  <section class="hero">
+    <h1>AYRTON SENNA</h1>
+  </section>
 
-      <aside>
-        <div class="card profile-card">
-          <div style="width:88px;height:88px;border-radius:12px;background:linear-gradient(180deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;font-weight:800;color:#042024">TD</div>
-          <div>
-            <h4>[Tên của bạn]</h4>
-          </div>
-        </div>
-      </aside>
-    </main>
+  <section class="content">
+    <div class="card">
+      <h2>Cuộc đời</h2>
+      <p>Tên đầy đủ: Ayrton Senna da Silva</p>
+      <p>Ngày sinh: 21/3/1960 — Quê quán: São Paulo, Brazil</p>
+      <p>Bắt đầu lái kart từ năm 4 tuổi, vô địch Karting Brazil khi 17 tuổi. Năm 1981 sang châu Âu thi đấu Formula Ford, nhanh chóng gây tiếng vang.</p>
+    </div>
 
-    <footer>
-      <div>© <span id="year"></span> [Tên của bạn]</div>
-    </footer>
-  </div>
+    <div class="card">
+      <h2>Thành tựu</h2>
+      <ul>
+        <li>Ra mắt F1 năm 1984 (Toleman)</li>
+        <li>3 lần vô địch thế giới: 1988, 1990, 1991</li>
+        <li>41 chiến thắng Grand Prix, 65 pole positions</li>
+        <li>Biệt danh: “Vua của mưa” – Rain Master</li>
+      </ul>
+    </div>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    document.getElementById('themeToggle').addEventListener('click',()=>{
-      document.body.classList.toggle('light');
-    });
-  </script>
+    <div class="card">
+      <h2>Sở thích & tính cách</h2>
+      <p>Đam mê tốc độ, nhưng ngoài đường đua rất khiêm tốn, sâu sắc. Tin vào Chúa và xem đua xe là sứ mệnh tâm linh. Yêu thiên nhiên, thể thao và sống giản dị.</p>
+    </div>
+
+    <div class="card">
+      <h2>Câu nói nổi tiếng</h2>
+      <ul>
+        <li>“If you no longer go for a gap that exists, you’re no longer a racing driver.”</li>
+        <li>“Being second is to be the first of the ones who lose.”</li>
+        <li>“I have no idols. I admire work, dedication and competence.”</li>
+      </ul>
+    </div>
+  </section>
+
 </body>
 </html>
