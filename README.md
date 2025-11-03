@@ -216,28 +216,28 @@
       <h2>Phần 1: Thông tin cơ bản</h2>
       <ul>
         <li><strong>Họ và tên:</strong> Trần Tất Đạt</li>
-        <li><strong>Lớp:</strong> 12 Hóa – Trường THPT Chuyên Hà Tĩnh</li>
-        <li><strong>Nơi sinh:</strong> Tỉnh Hà Tĩnh</li>
-        <li><strong>Ngày sinh:</strong> 12/03/2008</li>
+        <li><strong>Lớp:</strong>  </li>
+        <li><strong>Nơi sinh:</strong>  </li>
+        <li><strong>Ngày sinh:</strong>  </li>
       </ul>
     </section>
 
     <section id="hobby">
       <h2>Phần 2: Sở thích và tính cách</h2>
       <ul>
-        <li><strong>Thời gian rảnh:</strong> Đọc tiểu thuyết</li>
-        <li><strong>Môn yêu thích:</strong> Hóa học vì có Mr Hảo.</li>
+        <li><strong>Thời gian rảnh:</strong> </li>
+        <li><strong>Môn yêu thích:</strong>  .</li>
         <li><strong>Ba từ miêu tả:</strong> .............</li>
-        <li><strong>Thần tượng:</strong> Valentino Rossi, Ayrton Senna da Silva</li>
+        <li><strong>Thần tượng:</strong>   Ayrton Senna da Silva</li>
       </ul>
     </section>
 
     <section id="dream">
       <h2>Phần 3: Ước mơ và mục tiêu</h2>
       <ul>
-        <li><strong>Muốn trở thành:</strong> Bác sĩ</li>
-        <li><strong>Tự hào về:</strong> Đọc tiểu thuyết mạng 20 tiếng / ngày</li>
-        <li><strong>Kỹ năng muốn học:</strong> Viết 2 tay</li>
+        <li><strong>Muốn trở thành:</strong>  </li>
+        <li><strong>Tự hào về:</strong>  </li>
+        <li><strong>Kỹ năng muốn học:</strong>  </li>
       </ul>
     </section>
   </main>
